@@ -1,0 +1,137 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[T2A]{fontenc}	
+\usepackage[utf8]{inputenc}	
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage[pdftex]{graphicx}
+\graphicspath{{images/}}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{textcomp}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage[colorlinks,urlcolor=blue]{hyperref} %ссылки
+
+\author{}
+\title{
+Горизонты физики.
+Введение в фундаментальную фотонику и квантовую физику.
+Лекция 2.
+Введение в волновую оптику.
+}
+\date{\today}
+
+
+
+\begin{document}
+
+	\maketitle
+
+	\newpage
+	
+	\section{Явления волновой оптики}
+		\subsection{Поляризация}
+		Для общего развития. В дальнейших расчётах использоваться не будет.
+		
+		Рассмотрим волновое уравнение:
+		$$ E = E_0cos(\omega t - kz + \varphi_0), $$ где $\varphi_0$ --- начальная фаза
+		
+		$$ k = \frac{2 \pi}{\lambda} $$ --- волновое число
+		
+		Для неполяризованного света:		
+		
+		\begin{equation*}
+		\begin{cases}
+   			E_x = E_0cos(\omega t - kz + \varphi_0)\\
+   			E_y = E_0cos(\omega t - kz + \varphi_0)
+ 		\end{cases}
+		\end{equation*}
+		
+		Поляризованный же свет колеблется только по определённым осям.
+		
+		\vspace{0.5cm}
+		\textbf{Линейная поляризация:}
+		
+		Колебания света происходят только по одной из осей. Соответственно, например, для колебаний по некоторой оси Ox:
+		
+		$$ E = E_x = E_0cos(\omega t - kz + \varphi_0) $$
+		
+		\vspace{0.5cm}
+		\textbf{Нелинейная поляризация:}
+		
+		Для начала получается линейная поляризация, затем достигается относительный сдвиг волн по фазе.
+		
+		\vspace{0.5cm}
+		\textbf{Поляроиды:}
+		
+		\textbf{TODO}
+		
+		\subsection{Интерференция}
+		Явление взаимодействия нескольких волн.
+		
+		$$ \vec{E} = \vec{E_1} + \vec{E_2} $$
+		$$ I \sim <|E^2|> = <|\vec{E_1} + \vec{E_2}|^2> = E_1^2+E_2^2+2(E_1, \, E_2) = I_1 + I_2 + 2(E_{01}, \, E_{02}) = $$
+		$$ = I_1 + I_2 + 2\sqrt{I_1I_2}cos(k\cdot \Delta),$$
+		где $ \Delta = n \cdot \Delta x$
+		
+		\vspace{0.5cm}
+		Условия:
+		
+		$$ 1) \; (E_{01}, \, E_{02}) \neq 0 $$
+		$$ 2) \;  \omega_1 = \omega_2 => k_1=k_2=\frac{\omega}{c}$$
+		
+		\vspace{0.5cm}
+		Условие максимума интерференции:
+		$$ \Delta_{max} = m\lambda, $$
+		m - целое.
+		
+		\vspace{0.5cm}
+		\textbf{Схема Юнга с щелями}
+		
+		Универсальная схема получения интерференции от нелазерного источника.
+		
+		Из геометрии при малом угле $\varphi$ :
+		$$ \frac{x\cdot d}{L} = d \, tg \varphi, $$
+		L --- расстояние от щели до экрана, d --- высота щели, x --- высота рассматриваемой точки
+		
+		Условие максимума интерференции:
+		$$ d \, tg \varphi = m\cdot \lambda $$
+		
+		\vspace{0.5cm}
+		\textbf{Схема Юнга с тремя щелями}
+		Векторные диаграммы
+		
+		\vspace{0.5cm}
+		\textbf{Дифракционная решётка}
+		
+		$N >> 1$, N --- число щелей.
+		
+		Дифракционная картина при этом содержит чёткие узкие пики и тусклый фон между ними для каждой длины волны (грубо говоря, его отсутствие).
+		
+		$$ dsin \varphi = m\lambda < d $$
+		$$ m_{max} \leq \frac{d}{\lambda} $$
+		
+		\vspace{0.5cm}
+		Различимость пиков разных частот для дифракционной решётки, если считать различимыми длины волн, отличающиеся хотя бы на $20 \, \%$:
+		$$ \delta \lambda = \frac{\lambda}{m\cdot N} $$
+		
+		
+		\vspace{0.5cm}
+		Боковые максимумы менее яркие, чем центральные. Этот эффект возникает по причине неточечности щели.
+		
+		\vspace{0.5cm}
+		\textbf{Область дисперсии}
+		
+		Свободную область дисперсии определяет максимальную ширину спектрального интервала $\delta \lambda$ исследуемого излучения, при которой спектры соседних порядков еще не перекрываются. Длинноволновый конец спектра m-того порядка совпадает с коротковолновым концом спектра (m+1) порядка при выполнении условия
+		$$ m ( \lambda + \delta \lambda ) = (m+1)\lambda $$
+		К примеру,
+		$$ m \lambda_{red} = (m+1)\lambda_{violet} $$
+
+		
+		\subsection{Дифракция}		
+		Принцип Бабине
+		
+		\textbf{TODO}
+	
+\end{document}
